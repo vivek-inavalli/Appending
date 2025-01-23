@@ -10,6 +10,10 @@ app.use("/user", userRouter);
 app.use("/getblogs", blogRoutes);
 app.use("/gtcomments", commentRoutes);
 
+app.get("/", (req, res) => {
+  res.send("welcome to Appending Backend project by Vivek inavalli");
+});
+
 app.listen(process.env.PORT, () => {
   console.log("Server is running on port 3000");
 });
