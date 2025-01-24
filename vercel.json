@@ -10,11 +10,11 @@
     { "src": "/(.*)", "dest": "index.js" }
   ],
   "env": {
-    "MONGO_URL": "@mongo_url",
-    "EMAIL_USER": "@email_user",
-    "EMAIL_PASS": "@email_pass",
+    "MONGO_URL": "mongodb+srv://vivek:Vivek2139@mern.7ixez.mongodb.net/vivek",
+    "EMAIL_USER": "inavallivivek6@gmail.com",
+    "EMAIL_PASS": "uontkmaoeftrnqqq",
     "PORT": "3000",
-    "JWT_SECRET": "@jwt_secret",
+    "JWT_SECRET": "vivek",
     "NODE_ENV": "production"
   }
 }
