@@ -25,7 +25,7 @@ router.post("/signup", async (req, res) => {
     });
 
     const token = jwt.sign({ userId: newUser._id }, process.env.JWT_SECRET, {
-      expiresIn: 30,
+      expiresIn: "30m",
     });
     sendVerificationEmail(newUser, token);
 
