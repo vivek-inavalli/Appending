@@ -10,11 +10,11 @@
     { "src": "/(.*)", "dest": "index.js" }
   ],
   "env": {
-    "MONGO_URL": "@mongo_url",
-    "EMAIL_USER": "@email_user",
-    "EMAIL_PASS": "@email_pass",
+    "MONGO_URL": "@MONGO_URL",
+    "EMAIL_USER": "@EMAIL_USER",
+    "EMAIL_PASS": "@EMAIL_PASS",
     "PORT": "3000",
-    "JWT_SECRET": "@jwt_secret",
+    "JWT_SECRET": "@JWT_SECRET",
     "NODE_ENV": "production"
   }
 }
