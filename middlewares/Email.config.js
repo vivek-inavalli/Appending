@@ -9,7 +9,8 @@ const transporter = nodemailer.createTransport({
 });
 
 function sendVerificationEmail(user, token) {
-  const verificationUrl = `http://localhost:3000/user/verify/${token}`;
+  // use `http://localhost:3000/user/verify/${token}` while running locally 
+  const verificationUrl = `https://appending.vercel.app/user/verify/${token}`;
 
   const mailOptions = {
     from: process.env.EMAIL_USER,
