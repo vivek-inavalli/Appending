@@ -9,12 +9,5 @@
     { "src": "/gtcomments/(.*)", "dest": "index.js" },
     { "src": "/(.*)", "dest": "index.js" }
   ],
-  "env": {
-    "MONGO_URL": "@MONGO_URL",
-    "EMAIL_USER": "@EMAIL_USER",
-    "EMAIL_PASS": "@EMAIL_PASS",
-    "PORT": "3000",
-    "JWT_SECRET": "@JWT_SECRET",
-    "NODE_ENV": "production"
-  }
+ 
 }
