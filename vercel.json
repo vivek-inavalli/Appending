@@ -1,19 +1,17 @@
 {
-"version": 2,
-"builds": [
-{
-"src": "./index.js",
-"use": "@vercel/node"
-}
-],
-"routes": [
-{
-"src": "/routes/(.)",
-"dest": "/routes/$1"
-},
-{
-"src": "/(.)",
-"dest": "/index.js"
-}
-]
+  "version": 2,
+  "builds": [
+    { "src": "index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "index.js" }
+  ],
+  "env": {
+    "MONGO_URL": "@mongo_url",
+    "EMAIL_USER": "@email_user",
+    "EMAIL_PASS": "@email_pass",
+    "PORT": "3000",
+    "JWT_SECRET": "@jwt_secret",
+    "NODE_ENV": "production"
+  }
 }
